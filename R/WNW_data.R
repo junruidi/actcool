@@ -23,7 +23,7 @@ WNW_data = function(data, window = 90, tolerance = 2, cpmmax = 99){
     activity_data_i = activity_data[i,]
     wearMark = WNW(activity_data_i,window = 90, tolerance = 2, cpmmax = 99)
     WMX[i,] = wearMark
-    setTxtProgressBar(pb, i)
+    #setTxtProgressBar(pb, i)
   }
 
   out = cbind(data[,1:2], WMX)
