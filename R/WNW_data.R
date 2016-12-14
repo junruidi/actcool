@@ -15,8 +15,9 @@
 WNW_data = function(data, window = 90, tolerance = 2, cpmmax = 99){
   activity_data = as.matrix(data[,3:1442])
   WMX = matrix(NA,nrow = nrow(activity_data), ncol = ncol(activity_data))
-
-  pb = txtProgressBar(min = 1, max = nrow(activity_data), style = 3)
+  
+  
+  #pb = txtProgressBar(min = 1, max = nrow(activity_data), style = 3)
 
   for (i in 1 : nrow(activity_data)){
 
